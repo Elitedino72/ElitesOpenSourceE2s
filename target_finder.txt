@@ -1,0 +1,45 @@
+@name Target finder
+@inputs EGP:wirelink
+@outputs Tar:vector
+@persist PosRound:number
+@trigger 
+@model models/beer/wiremod/gate_e2_nano.mdl
+
+#make sure it runs
+runOnTick(1)
+runOnChat(1)
+
+#command lib
+#include "lib"
+
+if(first()){
+    EGP:egpClear()
+}
+
+
+if(chatClk(owner())){
+    T=owner():lastSaid():explode(" ")
+    if(T[1,string]=="/tar"){
+        hideChat(1)
+        local Name=T[2,string]
+        local Tar=findPlayerByName(Name)
+        if(Tar:isPlayer()){
+            #round info
+            PosRoundX = round(Tar:pos():x())
+            PosRoundY = round(Tar:pos():y())
+            PosRoundZ = round(Tar:pos():z())
+            #put it all together
+            Posround = "X: "+PosRoundX+" Y: "+PosRoundY+" Z: "+PosRoundZ
+            EGP:egpText(2,"Name: "+Tar:name(),vec2(25,25))
+            EGP:egpFont(2,"ChatFont",40)
+            EGP:egpText(3,"Health: "+Tar:health(),vec2(25,75))
+            EGP:egpFont(3,"ChatFont",40)
+            EGP:egpText(4,"Armor: "+Tar:armor(),vec2(25,125))
+            EGP:egpFont(4,"ChatFont",40)
+            EGP:egpText(5,"Pos: "+Posround,vec2(25,175))
+            EGP:egpFont(5,"ChatFont",30)   
+        }else{
+            EGP:egpClear()
+        }
+    }
+}

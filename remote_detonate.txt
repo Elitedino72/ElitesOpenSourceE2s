@@ -1,0 +1,28 @@
+@name remote detonate
+T=owner():lastSaid():explode(" ")
+E=entity()
+O=owner()
+Opos=O:pos()
+Oaim=O:aimPos()
+Oent=O:aimEntity()
+Ew=E:isWeldedTo()
+function entity findco(Str:string){
+    findByClass(Str)
+    findIncludePlayerProps(owner())
+    findSortByDistance(entity():pos())
+}
+runOnChat(1)
+
+if(chatClk(owner())){
+    T=owner():lastSaid():explode(" ")
+    if(T[1,string]=="/slay"){
+        hideChat(1)
+        local Name=T[2,string]
+        local Tar=findPlayerByName(Name)
+        P=propSpawn("models/props_phx/cannonball.mdl",entity():pos()+vec(0,0,30),0)
+        if(Tar:isPlayer()){
+            P:setPos(Tar:pos())
+            P:propBreak()
+        }
+    }
+}

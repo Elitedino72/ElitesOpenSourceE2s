@@ -1,0 +1,130 @@
+@name LocTable
+@persist Loc:table
+@trigger 
+#include "lib"
+runOnChat(1)
+if(map()=="gm_highway14800"){
+    Loc["Spawn",vector]=vec(-1602.638794,671.602112,-4151.968750)
+    Loc["TowerTop",vector]=vec(5633.041504,-5633.101074,2048.031250)
+    Loc["Bridge",vector]=vec(12671.147461,8113.090820,-4727.968750)
+    Loc["Underground",vector]=vec(8879.999023,4898.430176,-5303.968750)
+    Loc["Highway",vector]=vec(6148.208496,6247.817871,-4151.968750)
+    Loc["Gasstation",vector]=vec(-15408.318359,4168.765625,-4733.968750)
+}
+elseif(map()=="gm_Freespace_13"){
+    Loc["Spawn",vector]=vec(-2853.571045,-143.681351,-14575.968750)
+    Loc["Towertop",vector]=vec(-3800.699707,581.874878,-11519.968750)
+}
+elseif(map()=="gm_excess_island"){
+    Loc["Spawn",vector]=vec(111.669212,-2450.643555,0.031250)
+    Loc["Island",vector]=vec(1491.801514,-18.341148,12272.031250)
+    Loc["Silo",vector]=vec(7316.306152,-98.090584,0.031250)
+    Loc["Prisonisland",vector]=vec(-5753.708008,6181.302246,0.031250)
+}
+elseif(map()=="gm_excess_island_night"){
+    Loc["Spawn",vector]=vec(111.669212,-2450.643555,0.031250)
+    Loc["Island",vector]=vec(1491.801514,-18.341148,12272.031250)
+    Loc["Silo",vector]=vec(7316.306152,-98.090584,0.031250)
+    Loc["Prisonisland",vector]=vec(-5753.708008,6181.302246,0.031250)
+}
+elseif(map()=="gm_excess_construct_13"){
+    Loc["Spawn",vector]=vec(1284.620361,2106.997803,0.031250)
+    Loc["Island",vector]=vec(10239.973633,9220.353516,-9215.968750)
+}
+elseif(map()=="gm_construct_flatgrass_v6-2"){
+}
+elseif(map()=="gm_vagiland"){
+    Loc["spawn",vector]==vec(472.954468,1712.219849,-8183.968750)
+    Loc["control",vector]=vec(2426.239502,2393.496338,-14079.968750)
+}
+elseif(map()=="gm_bigcity"){
+    Loc["spawn",vector]=vec(1848.261230,-3620.916748,-11135.968750)
+    Loc["secret",vector]=vec(2267.641602,1498.789307,-9087.968750)
+    Loc["sewer",vector]=vec(9218.062500,11035.740234,-11263.968750)
+}
+elseif(map()=="gm_bigcity_improved"){
+    Loc["spawn",vector]=vec(1848.261230,-3620.916748,-11135.968750)
+    Loc["secret",vector]=vec(2267.641602,1498.789307,-9087.968750)
+    Loc["sewer",vector]=vec(9218.062500,11035.740234,-11263.968750)
+}
+elseif(map()=="gm_flatgrass"){
+    Loc["secret",vector]=vec(-432.031250, -431.968750, -12767.968750)
+    Loc["corner",vector]=vec(-15343.968750, 15343.968750, -12799.968750)
+    Loc["skybox",vector]=vec(-7466.208496, 421.627869, -15810.469727)
+    Loc["spawn",vector]=vec(661.894104, 619.585815, -12287.968750)  
+}
+elseif(map()=="fightspace3b"){
+    Loc["city",vector]=vec(739.131470, 9752.031250, -13135.968750)
+    Loc["secret",vector]=vec(12950.116211, 2993.638428, -14748.968750)
+    Loc["highway",vector]=vec(-3431.646240, -3619.316650, -7686.968750)
+    Loc["pyrimid",vector]=vec(-11356.984375, -11509.450195, -12670.968750)
+    Loc["tower",vector]=vec(-295.887787, 13327.726562, -6242.968750)
+    Loc["courtyard",vector]=vec(13197.568359, -15397.048828, -13163.968750)
+    Loc["sewer",vector]=vec(10538.771484, -8975.675781, -14991.968750)
+    Loc["hidden",vector]=vec(11722.031250, -3925.968750, -14944.968750)
+    Loc["dock",vector]=vec(-7207.826172, 7285.770508, -13237.585938)   
+}
+elseif(map()=="gm_buttes"){
+    Loc["dock",vector]=vec(11647.708008, -7163.188965, -11176.968750)
+    Loc["house",vector]=vec(11535.968750, 11432.031250, -11263.968750)
+    Loc["secret",vector]=vec(8685.578125, 12717.281250, -13695.968750)
+    Loc["mountain",vector]=vec(-8616.376953, -4858.773438, -8752.457031)
+    Loc["island",vector]=vec(12106.373047, -12177.125000, -11233.443359)
+}
+elseif(map()=="gm_freespace_13"){
+    Loc["underground",vector]=vec(-15371.487305, 12527.017578, -15839.968750)
+    Loc["spawn",vector]=vec(-2785.720459, -16.806059, -14583.968750)
+    Loc["tower",vector]=vec(-3741.449463, 571.357056, -11519.968750)
+    Loc["highway",vector]=vec(-2363.572998, -7504.791992, -13311.968750)
+    Loc["pyrimid",vector]=vec(-522.331909, 9767.558594, -15295.968750)
+    Loc["town",vector]=vec(-13029.197266, -14180.204102, -14847.968750)
+    Loc["hanger",vector]=vec(8216.031250, -6032.031250, -15799.968750)
+}
+elseif(map()=="gm_functional_flatgrass3"){
+    Loc["flat",vector]=vec(-8498.539062, -4079.968750, -11263.968750)
+    Loc["spawn",vector]=vec(5520.193359, -5822.699707, -14335.968750)
+    Loc["railroad",vector]=vec(5269.840332, 13039.023438, -14015.968750)
+    Loc["garage",vector]=vec(-9471.097656 -9665.587891 -14335.968750)
+    Loc["skybox",vector]=vec(11617.651367, 11823.661133, -16319.968750)
+}
+elseif(map()=="gm_bluehills_test3"){
+    Loc["spawn",vector]=vec(1369.846924, -572.692505, 264.031250)
+    Loc["dock",vector]=vec(-8021.517578, 8027.796387, 96.031250)
+    Loc["houses",vector]=vec(-7058.180176, 11332.170898, 55.494247)
+    Loc["warehouse",vector]=vec(-8021.517578, 8027.796387, 96.031250)
+    Loc["rocks",vector]=vec(-4812.264160, 102.752731, -1023.968750)
+    Loc["skatepark",vector]=vec(-9390.739258, -7436.444336, -927.968750)
+    Loc["mountain",vector]=vec(7784.418945, -11495.294922, 2352.031250)
+}
+elseif(map()=="gm_flatbuild_pbs_2015_dev"){
+    Loc["secret",vector]=vec(495.990875, 464.031250, -7126.969238)
+    Loc["spawn",vector]=vec(536.437134, -406.635803, -6655.968750)
+    Loc["water",vector]=vec(15855.968750, 15855.968750, -8383.968750)
+    Loc["",vector]=vec()
+    Loc["",vector]=vec()
+    Loc["",vector]=vec()
+}
+elseif(map()=="gm_flatgrass_darkstorm"){
+    Loc["admin",vector]=vec(8509.185547, 10049.381836, -16302.968750)
+    Loc["spawn",vector]=vec()
+    Loc["",vector]=vec()
+    Loc["",vector]=vec()
+    Loc["",vector]=vec()
+    Loc["",vector]=vec()
+}
+
+else{
+    print(_HUD_PRINTCENTER,"Map Not Charted.")
+}
+if(chatClk(owner())){
+    if(T[1,string]=="/opos"){
+        hideChat(1)
+        print(O:pos())
+    }
+    elseif(T[1,string]=="/map"){
+        hideChat(1)
+        print(map())
+    }
+}
+
+# Loc["",vector]=vec()

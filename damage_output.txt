@@ -1,0 +1,11 @@
+@name damage output
+@inputs Attacker:entity Damage:number
+@outputs On:number 
+@persist 
+@trigger 
+
+if(first()){
+    On = 1
+}
+
+print(Attacker,"did",Damage,"damage")
